@@ -1,0 +1,56 @@
+.eventos-container {
+    width: 100vw; 
+    min-height: 100vh;
+    margin: auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(145deg, #1e1e1e, #121212);
+  }
+  
+  .eventos-title {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    color: #ff6600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+  }
+  
+  .eventos-grid {
+    max-width: 960px;
+    width: 100%;  
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  
+  .evento-card {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(255, 102, 0, 0.2);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+  }
+  
+  .evento-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 8px 20px rgba(255, 102, 0, 0.4);
+  }
+  
+  .evento-card h2 {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-size: 1.4rem;
+    color: #ff6600;
+  }
+  
+  .evento-card p {
+    font-size: 1rem;
+    color: #555555;
+  }
+  
